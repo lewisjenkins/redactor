@@ -4621,6 +4621,7 @@ if (typeof jQuery === 'undefined') { var jQuery = undefined; }
             this.attr('data-re-name', this.name);
 
             this.addClass('redactor-dropdown redactor-dropdown-' + this.uuid + ' redactor-dropdown-' + this.name);
+            this.addClass(this.opts.class);
             this.dataset('data-dropdown-instance', this);
             var isDom = (this.items.sdom || typeof this.items === 'string');
 
