@@ -325,6 +325,9 @@ window.livePreviewHideFullscreen = false;
 
         // Add the .focusable-input class for Craft.CP
         this.redactor.container.getElement().addClass('focusable-input');
+        
+        // Allows me to add a class in the config file that I can target with CSS
+        this.redactor.container.getElement().addClass(this.redactorConfig.class);
 
         this.leaveFullscreenOnSaveShortcut();
 
